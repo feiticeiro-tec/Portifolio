@@ -1,0 +1,34 @@
+{% extends 'base.html'%}
+
+{% block HEAD %}
+    <link rel="stylesheet" href="{{url_for('portfolio.static',filename='css/index.css')}}">
+    <meta property="og:image" content="{{base_url}}{{url_for('portfolio.static',filename='img/eu.jpeg')}}" />
+{% endblock %}
+
+{% block BODY %}
+<main>
+    <header>
+        <img src="{{url_for('portfolio.static',filename='img/eu_desenho.png')}}" id="foto">
+        <h1 id="nome">Silvio Henrique</h1>
+        <h2>Python Development</h2>
+    </header>
+    <article>
+        <h3>Sobre Min</h3>
+        <p>&emsp;Ola, Prazer.</p>
+        <p>&emsp;Eu me chamo Silvio Henrique codinome "feiticeiro-tec", eu estudo a linguagem python a mais de 2 anos, com breves pausas por falta de motivação e frustrações em buscar vagas de estágio ou algo do tipo.</p>
+        <p>&emsp;Nasci em 1999 no dia 09 de novembro, a minha infância foi de certa forma conectada com a tecnologia, aos 4 anos de idade conheci os videogames, a minha mais forte lembrança é eu acordando meia à madrugada para jogar harry potter no ps1, porque não podia jogar além das 22:00 horas, e daí vêm o codinome.</p>
+        <p>&emsp;Aos 12 anos de idade tive contato com à tecnologia de forma mais física "hardware", através de um primo, más apesar desse contato eu ainda não havia tentado estudar de fato.</p>
+        <p>&emsp;Aos 14 anos de idade ganhei meu primeiro computador, ele era branco e mau rodava um windows xp, más foi com ele que eu tive o meu primeiro contato com a trindade HTML, CSS e JS, porém apesar disso por não saber por onde iniciar desisti de estudar.</p>
+        <p>&emsp;Aos 19 anos de idade conheci o python onde consegui ter um progresso de inicio, meio e fim.</p>
+    </article>
+    <article>
+        <h3>Skills</h3>
+        <pre>1 - Python<br>2 - Flask<br>3 - Flask-SQLAlchemy<br>4 - Flask-Login<br>5 - KivyMD</pre>
+    </article>
+</main>
+<script>
+    var url_eu ="{{url_for('portfolio.static',filename='img/eu.jpeg')}}";
+    var url_eu_desenho ="{{url_for('portfolio.static',filename='img/eu_desenho.png')}}";
+</script>
+<script src="{{url_for('portfolio.static',filename='js/index.js')}}"></script>
+{% endblock %}

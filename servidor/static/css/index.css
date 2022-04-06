@@ -1,0 +1,58 @@
+main{
+    flex:auto;
+}
+main header{
+    text-align: center;
+    width: 1000px;
+    margin:auto;
+    margin-top: 25px;
+}
+main header img{
+    border-radius: 50%;
+    border: solid var(--primary);
+    
+    width: 200px;
+}
+
+main > header > h1{
+    text-align: left;
+    color:var(--primary);
+    width: fit-content;
+    
+}
+main > header > h2{
+    text-align: left;
+    font-family: monospace;
+    color:var(--sub-primary);
+}
+article {
+    width: 1000px;
+    margin: auto;
+    margin: 20px auto
+}
+article h3{
+    font-size: 150%;
+    color:var(--primary)
+}
+article p, article pre{
+    color:white;
+    margin: 2px 0px;
+    
+}
+@media screen  and (max-width: 1000px) {
+    main > header,article{
+        width: 700px;
+    }
+}
+
+@media screen  and (max-width: 800px) {
+    main > header, article{
+        width: 600px;
+    }
+}
+@media screen  and (max-width: 600px) {
+    main > header, article{
+        width: inherit;
+        padding: 0px 7px;
+    }
+}

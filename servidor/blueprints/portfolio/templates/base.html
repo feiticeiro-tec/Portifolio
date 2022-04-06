@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - SilvioHC</title>
+    <link rel="stylesheet" href="{{url_for('portfolio.static',filename='css/menu.css')}}">
+    <link rel="stylesheet" href="{{url_for('portfolio.static',filename='css/base.css')}}">
+    
+    {% block HEAD%}{% endblock %}
+</head>
+<body>
+    <nav class="Menu" >
+        <ul>
+            <li><a href="{{url_for('portfolio.index')}}" {% if destaque=='inicio' %}destaque{% endif %} >Inicio</a></li>
+            <li><a href="{{url_for('portfolio.projetos')}}" {% if destaque=='projetos' %}destaque{% endif %} >Projetos</a></li>
+        </ul>
+    </nav>
+
+    {% block BODY %}{% endblock %}
+    <footer class="Menu">
+        <ul>
+            <li><a href="https://github.com/feiticeiro-tec" target="_black">GitHub</a></li>
+            <li><a href="#">Linkedin</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

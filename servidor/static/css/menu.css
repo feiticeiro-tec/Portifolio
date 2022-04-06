@@ -1,0 +1,45 @@
+.Menu{
+    background-color: rgb(35,35,45);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.Menu ul{
+    display: flex;
+    width: 1000px;
+    place-content: space-around;
+    margin: auto;
+    padding: 15px;
+}
+.Menu li{
+    height: fit-content;
+    place-self: center;
+}
+.Menu a{
+    color:var(--texto);
+    font-size: 100%;
+    transition-duration: 0.3s;
+}
+.Menu a[destaque]{
+    color:var(--primary);
+}
+.Menu a:hover{
+    font-size: 110%;
+    color:var(--primary);
+}
+@media screen  and (max-width: 1000px) {
+    .Menu ul{
+        width: 700px;
+    }
+}
+
+@media screen  and (max-width: 800px) {
+    .Menu ul{
+        width: 600px;
+    }
+}
+@media screen  and (max-width: 600px) {
+    .Menu ul{
+        width: 450px;
+    }
+}
