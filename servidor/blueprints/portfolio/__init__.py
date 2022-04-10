@@ -13,7 +13,7 @@ def index():
 
 @portfolio.route('/projetos')
 def projetos():
-    return render_template('projetos.html',base_url=request.url,destaque='projetos',projetos=getListProjects())
+    return render_template('projetos.html',base_url=request.url,destaque='projetos',projetos=getListProjects('https://github.com/feiticeiro-tec?tab=repositories'))
 
 
 

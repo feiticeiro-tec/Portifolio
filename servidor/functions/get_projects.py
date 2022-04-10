@@ -33,8 +33,8 @@ def getLinguage(HTML):
         linguage = None
     return {'Linguage':linguage}
 
-def getListProjects():
-    resp = requests.get('https://github.com/feiticeiro-tec?tab=repositories')
+def getListProjects(url):
+    resp = requests.get(url)
     html = resp.text
     html = html[html.index('<ul data-'):]
     html = html[:html.index('</ul')]
