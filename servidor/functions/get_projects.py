@@ -41,6 +41,8 @@ def getListProjects(url):
     projetos = html.split('<li')[1:]
     retorno = []
     for HTML in projetos:
+        if 'Forked from' in HTML:
+            continue
         data = dict(**getTitleAndLink(HTML),**getDescriptions(HTML),**getTime(HTML),**getLinguage(HTML))
         if data['Linguage']:
             retorno.append(data)
