@@ -7,12 +7,10 @@
 {% block BODY %}
 <main>
     {% for projeto in projetos %}
-    <a href="{{projeto['Link']}}" target="_black" 
-        <card>
-            <div class="Header" style="background-image:url('https://opengraph.githubassets.com/07ac0ec4807e8e701592c4746a581861219474546184355fee9d24d3e5d1ba0f/feiticeiro-tec/{{projeto['Title']}}'">
+    <a href="{{projeto['Link']}}" target="_black" >
+        <div class="Header" style="background-image:url('https://opengraph.githubassets.com/07ac0ec4807e8e701592c4746a581861219474546184355fee9d24d3e5d1ba0f/feiticeiro-tec/{{projeto['Title']}}'">
             
-            </div>
-        </card>
+        </div>
     </a>
     {% endfor %}
 </main>
