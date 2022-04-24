@@ -1,54 +1,13 @@
+.Header{
+    width: 334px;
+    height: 167px;
+    background-size: cover;
+}
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: inherit;
-    flex:auto;
 }
-main> a{
-    height: fit-content;
-}
-card{
-    background-color: white;
-    height: fit-content;
-    display: block;
-    padding: 11px;
-    border-radius: 7px;
-    margin: 11px auto;
-    width: 390px;
-}
-card .Header{
-    display:flex;
-    justify-content: space-evenly;
-}
-card .Header span{
-    font-size: 57%;
-    border: 1px solid;
-    padding: 2px 4px;
-    border-radius: 12px;
-}
-card .Header h3{
-    color: var(--sub-primary);
-    font-size: 95%;
-}
-card .Body p{
-    color:black;
-    font-size: 70%;
-    text-align: center;
-}
-card .Footer{
-    display:flex;
-    justify-content: space-around;
-    font-size: 73%;
-    color: black;
-}
-
-.HTML{
-    color:red;
-}
-.Python{
-    color: var(--sub-primary)
-}
-.kvlang{
-    color:blue;
+main a{
+    margin: 13px;
 }
